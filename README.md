@@ -7,5 +7,5 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 #### just type this command and u are ready to go 
 
 ```BASH 
-git clone https://github.com/Baga6312/neovim-lazyvim-config/ ~./.config/nvim/
+git clone https://github.com/Baga6312/neovim-lazyvim-config/ ~/.config/nvim/
 ```
