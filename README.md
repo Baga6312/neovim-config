@@ -1,11 +1,11 @@
-# Neovim from scratch
+# Neovim config files 
 
 ## Try out this config
 
 Make sure to remove or move your current `nvim` directory
 
 ```
-git clone git@github.com:ChristianChiarulli/Neovim-from-scratch.git ~/.config/nvim
+git clone https://github.com/Baga6312/neovim-lazyvim-config ~/.config/nvim
 ```
 
 Run `nvim` and wait for the plugins to be installed 
