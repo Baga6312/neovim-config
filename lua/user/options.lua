@@ -26,6 +26,20 @@ local options = {
 	et = true 		 -- allowen to insert tab space 
 	sw = 3 			 -- number of spaces inserted for each identation 
 	ts = 3 			 -- insert 3 spaces for a tab 
+	cocu = true 		 -- highlight the cursor 
+	nu = true 		 -- set numbered lines 
+	rnu = false 		 -- set relative number lines 
+	nuw = 2 		 -- set the nulber of column width to 2 
+	scl = "yes" 		 -- always show the sign column, otherwise it would shift the text each time
+	wrap = false 		 -- display lines as one long line 
+	so = 8 			 
+	siso = 8 		 
+	guifont = "monospace:h17"
+	shm:append "c" 
+
+
+
+
 }
 
 for k , v in paris(options) do 
