@@ -41,6 +41,7 @@ packer.init {
 -- Install your plugins here
  
 vim.cmd [[packadd packer.nvim]]
+-- vim.cmd [[packadd lualine.nvim]] 
 -- TODO make adding package automatically 
 -- vim.cmd [[packadd popup.nvim]]
 -- vim.cmd [[packadd plenary.nvim]]
@@ -51,12 +52,12 @@ return require('packer').startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use {'iamcco/markdown-preview.nvim', run = 'cd app && npm i ', cmd = 'MarkdownPreview'}
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  use { 'nvim-lualine/lualine.nvim' ,   requires = { 'nvim-tree/nvim-web-devicons', opt = true } } 
+
 --    use {
 --    'glepnir/galaxyline.nvim', branch = 'main', config = function() require'statusline' end,
---   requires = {'kyazdani42/nvim-web-devicons'}
+--  requires = {'kyazdani42/nvim-web-devicons'}
 --  }
-
-
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
