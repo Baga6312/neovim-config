@@ -52,7 +52,8 @@ return require('packer').startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use {'iamcco/markdown-preview.nvim', run = 'cd app && npm i ', cmd = 'MarkdownPreview'}
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-  use { 'nvim-lualine/lualine.nvim' ,   requires = { 'nvim-tree/nvim-web-devicons', opt = true } } 
+  use "https://github.com/LunarVim/Colorschemes" 
+--  use { 'nvim-lualine/lualine.nvim' ,   requires = { 'nvim-tree/nvim-web-devicons', opt = true } } 
 
 --    use {
 --    'glepnir/galaxyline.nvim', branch = 'main', config = function() require'statusline' end,

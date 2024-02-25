@@ -74,10 +74,10 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["lualine.nvim"] = {
+  Colorschemes = {
     loaded = true,
-    path = "/home/dt/.local/share/nvim/site/pack/packer/start/lualine.nvim",
-    url = "https://github.com/nvim-lualine/lualine.nvim"
+    path = "/home/dt/.local/share/nvim/site/pack/packer/start/Colorschemes",
+    url = "https://github.com/LunarVim/Colorschemes"
   },
   ["markdown-preview.nvim"] = {
     commands = { "MarkdownPreview" },
@@ -91,12 +91,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dt/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
-  },
-  ["nvim-web-devicons"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/dt/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
-    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
