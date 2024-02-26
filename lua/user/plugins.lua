@@ -46,19 +46,12 @@ vim.cmd [[packadd packer.nvim]]
 -- vim.cmd [[packadd popup.nvim]]
 -- vim.cmd [[packadd plenary.nvim]]
 return require('packer').startup(function(use)
-  -- My plugins here
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use {'iamcco/markdown-preview.nvim', run = 'cd app && npm i ', cmd = 'MarkdownPreview'}
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-  use "https://github.com/LunarVim/Colorschemes" 
---  use { 'nvim-lualine/lualine.nvim' ,   requires = { 'nvim-tree/nvim-web-devicons', opt = true } } 
-
---    use {
---    'glepnir/galaxyline.nvim', branch = 'main', config = function() require'statusline' end,
---  requires = {'kyazdani42/nvim-web-devicons'}
---  }
+  use "folke/tokyonight.nvim" 
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

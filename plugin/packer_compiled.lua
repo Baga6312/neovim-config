@@ -74,11 +74,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  Colorschemes = {
-    loaded = true,
-    path = "/home/dt/.local/share/nvim/site/pack/packer/start/Colorschemes",
-    url = "https://github.com/LunarVim/Colorschemes"
-  },
   ["markdown-preview.nvim"] = {
     commands = { "MarkdownPreview" },
     loaded = false,
@@ -106,6 +101,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dt/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/home/dt/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   }
 }
 
