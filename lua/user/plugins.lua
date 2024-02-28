@@ -51,7 +51,9 @@ return require('packer').startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use {'iamcco/markdown-preview.nvim', run = 'cd app && npm i ', cmd = 'MarkdownPreview'}
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-  use "folke/tokyonight.nvim" 
+  -- use "folke/tokyonight.nvim" 
+  use "samueljoli/cyberpunk.nvim"
+  use "thedenisnikulin/vim-cyberpunk" 
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

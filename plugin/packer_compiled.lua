@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["cyberpunk.nvim"] = {
+    loaded = true,
+    path = "/home/dt/.local/share/nvim/site/pack/packer/start/cyberpunk.nvim",
+    url = "https://github.com/samueljoli/cyberpunk.nvim"
+  },
   ["markdown-preview.nvim"] = {
     commands = { "MarkdownPreview" },
     loaded = false,
@@ -102,10 +107,10 @@ _G.packer_plugins = {
     path = "/home/dt/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
-  ["tokyonight.nvim"] = {
+  ["vim-cyberpunk"] = {
     loaded = true,
-    path = "/home/dt/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
+    path = "/home/dt/.local/share/nvim/site/pack/packer/start/vim-cyberpunk",
+    url = "https://github.com/thedenisnikulin/vim-cyberpunk"
   }
 }
 
