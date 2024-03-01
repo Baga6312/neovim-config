@@ -54,7 +54,7 @@ keymap("v", "p", '"_dP', opts)
 
 -- explorer 
 
-keymap("n", "<C-e>", " :Lexplore | :vertical resize -40<Return> ", opts)
+keymap("n", "<C-e>", " :Lexplore | :vertical resize -40<Return>" , opts)
 
 -- Visual Block --
 -- Move text up and down

@@ -3,6 +3,8 @@ require "user.keymaps"
 require "user.plugins"
 require "user.colorscheme" 
 require "user.cmp" 
- 
 
- -- require('lualine').setup() 
+
+require('hardline').setup {}
+vim.cmd(":resiz +2<CR>")
+ 
