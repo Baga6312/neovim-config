@@ -38,25 +38,30 @@ packer.init {
   },
 }
 
--- Install your plugins here
- 
 vim.cmd [[packadd packer.nvim]]
--- vim.cmd [[packadd lualine.nvim]] 
--- TODO make adding package automatically 
--- vim.cmd [[packadd popup.nvim]]
--- vim.cmd [[packadd plenary.nvim]]
+
 return require('packer').startup(function(use)
-  use "wbthomason/packer.nvim" -- Have packer manage itself
-  use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+  use "wbthomason/packer.nvim" 
+  use "nvim-lua/popup.nvim" 
+  use "nvim-lua/plenary.nvim" 
   use {'iamcco/markdown-preview.nvim', run = 'cd app && npm i ', cmd = 'MarkdownPreview'}
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  
   -- use "folke/tokyonight.nvim" 
-  use "samueljoli/cyberpunk.nvim"
   use "thedenisnikulin/vim-cyberpunk" 
 
-  -- Automatically set up your configuration after cloning packer.nvim
-  -- Put this at the end after all plugins
+  -- completion plugins 
+  use "hrsh7th/nvim-cmp"
+  use "hrsh7th/cmp-buffer"
+  use "hrsh7th/cmp-path"
+  use "hrsh7th/cmp-cmdline"
+  use "saadparwaiz1/cmp_luasnip" 
+
+  -- snippet 
+  use "L3MON4D3/LuaSnip" -- snippet engine
+  use "rafamadriz/friendly-snippets"
+
+  
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
