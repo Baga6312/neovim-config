@@ -3,8 +3,7 @@ require "user.keymaps"
 require "user.plugins"
 require "user.colorscheme" 
 require "user.cmp" 
-require "user.lsp.lsp" 
-
+require "user.lsp_config" 
 
 
 require('hardline').setup {}
