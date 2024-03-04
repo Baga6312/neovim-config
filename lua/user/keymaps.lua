@@ -53,8 +53,13 @@ keymap("v", "p", '"_dP', opts)
 
 
 -- explorer 
-
 keymap("n", "<C-e>", " :Lexplore | :vertical resize -40<Return>" , opts)
+
+-- mason 
+keymap("n" ,"<C-m>" , ":Mason <CR>" , opts )
+
+-- Telescope 
+keymap("n" , "<C-t>" , ":Telescope find_files" , opts) 
 
 -- Visual Block --
 -- Move text up and down
