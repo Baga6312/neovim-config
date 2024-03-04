@@ -66,6 +66,8 @@ return require('packer').startup(function(use)
         "williamboman/mason-lspconfig.nvim" , 
         "williamboman/mason.nvim" , 
 }
+  -- telescope 
+  use "nvim-telescope/telescope.nvim" 
 
   -- snippet use "L3MON4D3/LuaSnip" -- snippet engine
   use "rafamadriz/friendly-snippets"
