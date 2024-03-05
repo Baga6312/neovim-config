@@ -57,15 +57,14 @@ return require('packer').startup(function(use)
   use "hrsh7th/cmp-cmdline"
   use "saadparwaiz1/cmp_luasnip" 
 
-
   -- status line 
   use {'ojroques/nvim-hardline'}
 
   -- LSP 
   use { "neovim/nvim-lspconfig",
         "williamboman/mason-lspconfig.nvim" , 
-        "williamboman/mason.nvim" , 
-}
+        "williamboman/mason.nvim" ,
+  }
   -- telescope 
   use "nvim-telescope/telescope.nvim" 
 
