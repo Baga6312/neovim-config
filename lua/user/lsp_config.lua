@@ -12,3 +12,4 @@ require 'lspconfig'.lua_ls.setup {}
 require 'lspconfig'.ast_grep.setup{}
 require 'lspconfig'.pylsp.setup{}
 require 'lspconfig'.emmet_ls.setup{}
+-- require 'lspconfig'.docformater.setup{}
