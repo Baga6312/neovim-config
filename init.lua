@@ -5,6 +5,7 @@ require "user.colorscheme"
 require "user.cmp" 
 require "user.lsp_config" 
 require "user.telescope"
+require "user.treesitter"
 
 
 require('hardline').setup {}

@@ -4,6 +4,7 @@ require "mason-lspconfig".setup({
                       "pylsp" , 
                       "ast_grep" , 
                       "emmet_ls" , 
+                      "html" , 
                       }
 })
 
@@ -12,4 +13,4 @@ require 'lspconfig'.lua_ls.setup {}
 require 'lspconfig'.ast_grep.setup{}
 require 'lspconfig'.pylsp.setup{}
 require 'lspconfig'.emmet_ls.setup{}
--- require 'lspconfig'.docformater.setup{}
+require 'lspconfig'.html.setup{}

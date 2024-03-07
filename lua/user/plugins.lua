@@ -45,7 +45,6 @@ return require('packer').startup(function(use)
   use "nvim-lua/popup.nvim" 
   use "nvim-lua/plenary.nvim" 
   use {'iamcco/markdown-preview.nvim', run = 'cd app && npm i ', cmd = 'MarkdownPreview'}
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   
   -- use "folke/tokyonight.nvim" 
   use "thedenisnikulin/vim-cyberpunk" 
@@ -67,6 +66,12 @@ return require('packer').startup(function(use)
   }
   -- telescope 
   use "nvim-telescope/telescope.nvim" 
+
+  -- treesitter 
+    use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }  
 
   -- snippet use "L3MON4D3/LuaSnip" -- snippet engine
   use "rafamadriz/friendly-snippets"
