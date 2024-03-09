@@ -55,8 +55,9 @@ return require('packer').startup(function(use)
   use "hrsh7th/cmp-path"
   use "hrsh7th/cmp-cmdline"
   use "saadparwaiz1/cmp_luasnip" 
+  use "windwp/nvim-autopairs" 
 
-  -- status line 
+
   use {'ojroques/nvim-hardline'}
 
   -- LSP 
@@ -72,6 +73,7 @@ return require('packer').startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }  
+
 
   -- snippet use "L3MON4D3/LuaSnip" -- snippet engine
   use "rafamadriz/friendly-snippets"
