@@ -81,6 +81,9 @@ return require('packer').startup(function(use)
     run = ":TSUpdate",
   }  
 
+  -- toggle term 
+  use "akinsho/toggleterm.nvim" 
+
 
   use "L3MON4D3/LuaSnip" -- snippet engine
   use "rafamadriz/friendly-snippets"

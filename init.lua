@@ -8,10 +8,14 @@ require "user.telescope"
 require "user.treesitter"
 require "user.autopairs"
 require "user.nvimtree"
+require "user.toggleterm" 
+
 
 
 require("nvim-tree").setup{}
 
 require('hardline').setup {}
 vim.cmd(":resiz +2<CR>")
-vim.cmd(":NvimTreeToggle . ")
+
+vim.cmd(":NvimTreeToggle .") 
+vim.cmd(":bnext  ")
