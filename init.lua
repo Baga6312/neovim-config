@@ -7,8 +7,9 @@ require "user.lsp_config"
 require "user.telescope"
 require "user.treesitter"
 require "user.autopairs"
+require "user.nvimtree"
 
-
+require("nvim-tree").setup()
 require('hardline').setup {}
 vim.cmd(":resiz +2<CR>")
  

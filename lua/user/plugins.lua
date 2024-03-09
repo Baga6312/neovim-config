@@ -48,6 +48,7 @@ return require('packer').startup(function(use)
   
   use "thedenisnikulin/vim-cyberpunk" 
 
+
   -- completion plugins 
   use "hrsh7th/nvim-cmp"
   use "hrsh7th/cmp-buffer"
@@ -56,6 +57,9 @@ return require('packer').startup(function(use)
   use "saadparwaiz1/cmp_luasnip" 
 
 
+  -- nvimtree 
+  use "nvim-tree/nvim-tree.lua"
+  use 'kyazdani42/nvim-web-devicons'
 
   -- autopairs 
   use "windwp/nvim-autopairs" 
