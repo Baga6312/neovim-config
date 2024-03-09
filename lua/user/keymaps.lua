@@ -20,10 +20,10 @@ vim.g.maplocalleader = " "
 
 -- Normal --
 -- Better window navigation
-keymap("n", "<C-Left>", "<C-w>h", opts)
-keymap("n", "<C-Down>", "<C-w>j", opts)
-keymap("n", "<C-Up>", "<C-w>k", opts)
-keymap("n", "<C-Right>", "<C-w>l", opts)
+keymap("n", "<C-h>", "<C-w>h", opts)
+keymap("n", "<C-k>", "<C-w>j", opts)
+keymap("n", "<C-j>", "<C-w>k", opts)
+keymap("n", "<C-l>", "<C-w>l", opts)
 
 keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 
@@ -53,13 +53,13 @@ keymap("v", "p", '"_dP', opts)
 
 
 -- nvimtree 
-keymap("n", "<C-e>", " :NvimTreeToggle| :vertical resize -40<Return>" , opts)
+keymap("n", "<C-e>", " :NvimTreeToggle | :vertical resize -40<Return>" , opts)
 
 -- mason 
 keymap("n" ,"<C-m>" , ":Mason <CR>" , opts )
 
 -- Telescope 
-keymap("n" , "<C-t>" , ":Telescope find_files<CR>" , opts) 
+keymap("n" , "<C-f>" , ":Telescope find_files<CR>" , opts) 
 
 -- Visual Block --
 -- Move text up and down
