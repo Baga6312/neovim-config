@@ -48,7 +48,6 @@ return require('packer').startup(function(use)
   
   use "thedenisnikulin/vim-cyberpunk" 
 
-
   -- completion plugins 
   use "hrsh7th/nvim-cmp"
   use "hrsh7th/cmp-buffer"
@@ -72,6 +71,14 @@ return require('packer').startup(function(use)
         "williamboman/mason-lspconfig.nvim" , 
         "williamboman/mason.nvim" ,
   }
+
+  -- bufferline 
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+ 
+
+
+
+
   -- telescope 
   use "nvim-telescope/telescope.nvim" 
 
