@@ -11,14 +11,15 @@ require "user.nvimtree"
 require "user.toggleterm" 
 
 
+vim.opt.termguicolors = true 
+
 
 require("nvim-tree").setup{}
-
-vim.opt.termguicolors = true 
 require("bufferline").setup{}
 require('hardline').setup {}
-vim.cmd(":resiz +2<CR>")
 
+
+vim.cmd(":resiz +2<CR>")
 vim.cmd(":NvimTreeToggle .") 
 -- vim.cmd(":bnext  ")
 vim.cmd(":ToggleTerm")
