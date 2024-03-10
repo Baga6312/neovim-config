@@ -21,6 +21,6 @@ require('hardline').setup {}
 
 vim.cmd(":resiz +2<CR>")
 vim.cmd(":NvimTreeToggle .") -- 
-vim.cmd(":bnext  ")
+-- vim.cmd(":bnext  ")
 vim.cmd(":ToggleTerm . ")
 
