@@ -4,7 +4,8 @@ require "mason-lspconfig".setup({
                       "pylsp" , 
                       "ast_grep" , 
                       "emmet_ls" , 
-                      "html" , 
+                      "html" ,
+                      "eslint"
                       }
 })
 
@@ -14,3 +15,4 @@ require 'lspconfig'.ast_grep.setup{}
 require 'lspconfig'.pylsp.setup{}
 require 'lspconfig'.emmet_ls.setup{}
 require 'lspconfig'.html.setup{}
+require 'lspconfig'.eslint.setup{}
