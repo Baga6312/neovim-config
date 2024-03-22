@@ -45,7 +45,6 @@ return require('packer').startup(function(use)
   use "nvim-lua/popup.nvim" 
   use "nvim-lua/plenary.nvim" 
   use {'iamcco/markdown-preview.nvim', run = 'cd app && npm i ', cmd = 'MarkdownPreview'}
-  
   use "thedenisnikulin/vim-cyberpunk" 
 
   -- completion plugins 
@@ -55,48 +54,63 @@ return require('packer').startup(function(use)
   use "hrsh7th/cmp-cmdline"
   use "saadparwaiz1/cmp_luasnip" 
 
+  use {
+  'nvimdev/dashboard-nvim',
+  event = 'VimEnter',
+  config = function()
+    require('dashboard').setup {
+      -- config
+    }
+  end,
+  requires = {'nvim-tree/nvim-web-devicons'}
+} ; 
 
-  -- nvimtree 
-  use "nvim-tree/nvim-tree.lua"
-  use 'kyazdani42/nvim-web-devicons'
+
+
+
+
+
+  --nvimtree 
+  use "nvim-tree/nvim-tree.lua" ; 
+  use 'kyazdani42/nvim-web-devicons' ; 
 
   -- autopairs 
-  use "windwp/nvim-autopairs" 
+  use "windwp/nvim-autopairs" ; 
 
 
-  use {'ojroques/nvim-hardline'}
+  use {'ojroques/nvim-hardline'} ; 
 
   -- LSP 
   use { "neovim/nvim-lspconfig",
         "williamboman/mason-lspconfig.nvim" , 
         "williamboman/mason.nvim" ,
-  }
+  } ; 
 
   -- bufferline 
-  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'} ; 
  
 
 
 
 
   -- telescope 
-  use "nvim-telescope/telescope.nvim" 
+  use "nvim-telescope/telescope.nvim" ; 
 
   -- treesitter 
     use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
-  }  
+  }; 
 
   -- toggle term 
-  use "akinsho/toggleterm.nvim" 
+  use "akinsho/toggleterm.nvim" ; 
 
 
-  use "L3MON4D3/LuaSnip" -- snippet engine
-  use "rafamadriz/friendly-snippets"
-
-  
-  if PACKER_BOOTSTRAP then
+  use "L3MON4D3/LuaSnip" ; -- snippet engine
+  use "rafamadriz/friendly-snippets" ; 
+  if(PACKER_BOOTSTRAP)
+  then
     require("packer").sync()
   end
+
 end)
